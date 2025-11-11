@@ -7,7 +7,7 @@ author: 'Yabuk'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["gamedev", "żerca"]
 ---
 
 Alright, let's talk what *"Żerca"* actually means. It's pretty funny, because even though it's a Polish word, most Polish people have no idea what it means.

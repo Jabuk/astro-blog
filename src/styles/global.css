@@ -12,6 +12,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: #f1f5f9;
+}
+
 a:visited {
   color: #f1f5f9;
 }
