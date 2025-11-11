@@ -1,5 +1,7 @@
 ---
-const pageTitle = 'Yabuk Blog'
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+const pageTitle = 'Yabuk Blog';
 ---
 
 <html lang="en">
@@ -11,9 +13,7 @@ const pageTitle = 'Yabuk Blog'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 		<h1>Yabuk Blog</h1>
     <p>Hello there :)</p>
 	</body>
