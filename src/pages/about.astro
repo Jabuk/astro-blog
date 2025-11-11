@@ -32,10 +32,6 @@ const textCase = "uppercase";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 <style define:vars={{skillColor, fontWeight, textCase}}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
       .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);
@@ -59,5 +55,8 @@ const textCase = "uppercase";
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days to finish.</p>}
     <p>In the meantime, check out my <a href="https://twitch.tv/yabuk">Twitch channel</a>.</p> 
     <Footer/>
+    <script>
+      import "../scripts/menu.js"
+    </script>
 	</body>
 </html>
