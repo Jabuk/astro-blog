@@ -1,0 +1,22 @@
+---
+const { platform, platformUrl, username } = Astro.props;
+const href = platformUrl
+  ? `https://${platformUrl}/${username}`
+  : `https://${platform}.com/${username}`;
+
+---
+
+<a href={href}>
+  <img src={`https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/${platform}.svg`} alt={platform}></img>
+</a>
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+</style>

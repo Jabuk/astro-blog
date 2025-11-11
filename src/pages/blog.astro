@@ -2,7 +2,8 @@
 ---
 const pageTitle = 'Yabuk Blog'
 
-import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css'
 
 ---
@@ -16,12 +17,13 @@ import '../styles/global.css'
     <title>{pageTitle}</title>
 	</head>
 	<body>
-    <Navigation />
+    <Header />
     <h1>Yabuk Blog</h1>
     <p>This is where I will post about stuff.</p>
     <ul>
       <li><a href="/posts/post-1">11/11/2025 - Polish Independence Day</a></li>
       <li><a href="/posts/post-2">11/11/2025 - How to Translate "Żerca"?</a></li>
     </ul>
+    <Footer/>
 	</body>
 </html>
