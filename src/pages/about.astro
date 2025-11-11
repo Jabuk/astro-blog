@@ -1,8 +1,7 @@
 
 ---
+import BaseLayout from '../layouts/BaseLayout.astro'
 import '../styles/global.css'
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 const pageTitle = "About Me"
 const identity = {
   nickName: "Yabuk",
@@ -11,7 +10,6 @@ const identity = {
   occupation: "IT Project Manager",
   hobbies: ["game development", "dancing", "home labs"]
 }
-
 const skills = ["Godot", "Project Management", "Product Management", "Psychology", "UI/UX", "Linux", "Docker", "Containerization", "CI/CD"]
 
 const happy = true;
@@ -24,24 +22,14 @@ const textCase = "uppercase";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
 <style define:vars={{skillColor, fontWeight, textCase}}>
       .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
       }
-    </style>
-	</head>
-	<body>
-    <Header/>
-		<h1>About Me</h1>
+</style>
+<BaseLayout pageTitle={pageTitle}>
     <h2>...and this site!</h2>
     <p>I live in {identity.city}, {identity.country}, and I work as an {identity.occupation}.</p>
     <p>When I'm not working on commercial projects, I build a game development studio, stream on Twitch, or rock the dancefloor.</p>
@@ -54,9 +42,4 @@ const textCase = "uppercase";
     {finished && <p>I finished this tutorial!</p>}
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days to finish.</p>}
     <p>In the meantime, check out my <a href="https://twitch.tv/yabuk">Twitch channel</a>.</p> 
-    <Footer/>
-    <script>
-      import "../scripts/menu.js"
-    </script>
-	</body>
-</html>
+</BaseLayout>

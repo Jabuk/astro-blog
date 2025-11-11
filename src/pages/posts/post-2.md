@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'How to translate "Żerca"?'
 pubDate: 2025-11-11
 description: 'Second Astro blog'
@@ -8,10 +9,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-# How to translate "Żerca"?
-
-Published on: 2025-11-11
 
 Alright, let's talk what *"Żerca"* actually means. It's pretty funny, because even though it's a Polish word, most Polish people have no idea what it means.
 
